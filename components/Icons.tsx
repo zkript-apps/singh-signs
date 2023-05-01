@@ -1,28 +1,31 @@
-"use client"
-import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { IconProp } from '@fortawesome/fontawesome-svg-core'
+"use client";
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-const Icons = ({ iconText }: { iconText: { icon: IconProp, text: string }[] }) => {
+const Icons = ({ iconText }: { iconText: string[] }) => {
   return (
-    <div className="flex flex-col gap-12 py-20 px-6 xl:px-80 items-center bg-gray-100">
-    <div>
-        <h3 className="font-extrabold text-4xl text-giants-orange text-center">
-            QUALITY <span className="text-oxford-blue">FIRST</span>
-        </h3>
-    </div>
-    <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 place-items-center">
-        {iconText.map((item, index) => {
+    <div className="bg-[url('/service-bg.png')] bg-no-repeat bg-cover text-shady-white">
+      <div className="w-full md:w-1/2 lg:w-72 bg-oxford-blue/80 p-8">
+        <h3 className="text-2xl mb-5">The Advantages Of This Service</h3>
+        <ul className="text-medium space-y-4">
+          {iconText.map((menu, index) => {
             return (
-                <div key={index} className="flex flex-col gap-4 items-center">
-                    <FontAwesomeIcon icon={item.icon} className="h-12 w-12 text-sgbus-green" />
-                    <h3 className="text-2xl">{item.text}</h3>
-                </div>
+              <li className="flex items-center">
+                <FontAwesomeIcon
+                  className="w-3.5 mr-5 text-giants-orange"
+                  icon={faArrowRight}
+                />
+                <p className="font-medium transition hover:text-giants-orange">
+                  {menu}
+                </p>
+              </li>
             );
-        })}
+          })}
+        </ul>
+      </div>
     </div>
-</div>
-  )
-}
+  );
+};
 
-export default Icons
+export default Icons;

@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { Fragment } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/swiper-bundle.css";
@@ -7,9 +7,18 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
 import { Autoplay } from "swiper";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faQuoteRight,
+  faArrowRight,
+  faHeartPulse,
+} from "@fortawesome/free-solid-svg-icons";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { NAVIGATION_MENU } from "@/helpers/constants";
+import Icons from "./Icons";
+import Link from "next/link";
 
 const Hero = ({
-  smallTitle,
   title,
   subTitle,
   description,
@@ -21,36 +30,110 @@ const Hero = ({
   description: string;
   imagesNames: string[];
 }) => {
+  const iconText = [
+    "Exterior & Interior",
+    "Digital",
+    "Graphic Style",
+    "Architectural & Recovery",
+    "Wayfinding",
+    "Pylon Signage & Conversions",
+  ];
+
   return (
-    <div className="flex flex-col xl:flex-row gap-12 py-20 px-6 xl:px-80 items-center">
-      <div className="flex-1">
-        <p className="text-gray-400 italic">{smallTitle}</p>
-        <h3 className="text-4xl font-extrabold mt-12">{title}</h3>
-        <h3 className="text-2xl mt-6">{subTitle}</h3>
-        <p className="mt-4">{description}</p>
-      </div>
-      <div className="flex-1 w-full lg:w-[512px]">
+    <div className="grid grid-cols-1 lg:grid-cols-20 gap-8 py-20 px-6 xl:px-80 items-start">
+      <div className="lg:col-start-1 lg:col-end-15 space-y-5">
         <Swiper
           modules={[Autoplay]}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
           }}
-          className="mySwiper"
+          className=" rounded-xl"
         >
           {imagesNames.map((name, index) => {
             return (
               <SwiperSlide key={index}>
                 <Image
+                  className={`object-cover w-full h-[509px] ${
+                    name == "ds-works.png" ? "object-top" : "object-center"
+                  }`}
                   src={`/${name}`}
-                  width="512"
-                  height="512"
+                  width="900"
+                  height="509"
                   alt="Message"
                 />
               </SwiperSlide>
             );
           })}
         </Swiper>
+        <h2 className="text-3xl lg:text-5xl text-oxford-blue">{title}</h2>
+        <p className="relative text-xl italic text-darker-gray bg-light-gray/50 p-5 rounded-md">
+          "{subTitle}"
+          <span>
+            <FontAwesomeIcon
+              icon={faQuoteRight}
+              className="absolute -bottom-8 right-8 h-20 w-20 text-giants-orange"
+            />
+          </span>
+        </p>
+        <p className="text-darker-gray font-medium leading-relaxed pt-10">
+          {description}
+        </p>
+        <Icons iconText={iconText} />
+      </div>
+
+      <div className="lg:col-start-15 lg:col-end-21 space-y-7">
+        <div className="bg-oxford-blue p-8 rounded-lg">
+          <h3 className="text-2xl text-light-gray">Recent Services</h3>
+          <div className="border-b border-giants-orange w-20 my-5" />
+          <ul className="text-medium space-y-3 text-light-gray">
+            {NAVIGATION_MENU.filter((link) => link.name == "SERVICES").map(
+              (menu, item) => {
+                return menu.subMenu.map((subMenu, index) => {
+                  let str = subMenu.name;
+                  str =
+                    str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+                  return (
+                    <li key={index}>
+                      <Link href={subMenu.url} className="flex items-center">
+                        <FontAwesomeIcon
+                          className="w-3.5 mr-5 text-giants-orange"
+                          icon={faArrowRight}
+                        />
+                        <h4 className="text-xl font-medium transition hover:text-giants-orange">
+                          {str}
+                        </h4>
+                      </Link>
+                    </li>
+                  );
+                });
+              }
+            )}
+          </ul>
+        </div>
+        <div className="bg-[url('/make-appointment-bg.png')] rounded-lg p-8 space-y-5">
+          <FontAwesomeIcon
+            className="w-20 h-20 text-giants-orange"
+            icon={faHeartPulse}
+          />
+          <h2 className="text-shady-white text-3xl lg:text-4xl">
+            Making Your Life Easier
+          </h2>
+          <Link href="/">
+            <button className="shadow-lg mt-8 bg-oxford-blue text-light-gray px-6 py-3 hover:bg-oxford-blue/80 rounded transition ease-in-out hover:scale-90">
+              Make Appointment
+            </button>
+          </Link>
+        </div>
+
+        <div className="bg-oxford-blue p-8 rounded-lg">
+          <h3 className="text-2xl text-light-gray">Follow Us On</h3>
+          <div className="border-b border-giants-orange w-20 my-5" />
+          <FontAwesomeIcon
+            className="w-6 h-6 text-giants-orange transition hover:text-shady-white hover:scale-110"
+            icon={faFacebook}
+          />
+        </div>
       </div>
     </div>
   );

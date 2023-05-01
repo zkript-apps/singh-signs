@@ -1,39 +1,12 @@
-"use client"
-import React from 'react'
-import Hero from '@/components/Hero';
-import Images from '@/components/Images';
-import TextImage from '@/components/TextImage';
-import { faBinoculars, faComputer, faPaintBrush, faRulerCombined, faSignHanging } from '@fortawesome/free-solid-svg-icons';
-import Icons from '@/components/Icons';
+"use client";
+import React from "react";
+import Hero from "@/components/Hero";
+import Images from "@/components/Images";
+import TextImage from "@/components/TextImage";
 
 const Content = () => {
-  const iconText = [
-    {
-      icon: faPaintBrush,
-      text: "Exterior & Interior"
-    },
-    {
-      icon: faComputer,
-      text: "Digital"
-    },
-    {
-      icon: faPaintBrush,
-      text: "Graphic Style"
-    },
-    {
-      icon: faRulerCombined,
-      text: "Architectural & Recovery"
-    },
-    {
-      icon: faBinoculars,
-      text: "Wayfinding"
-    },
-    {
-      icon: faSignHanging,
-      text: "Pylon Signage & Conversions"
-    },
-  ];
-  const heroDesc = "Here’s what we know: People will form an impression of your business based on a host of factors. One of those is the image you present with your signage. Often the first point of contact you have with potential customers, your signage speaks volumes about you and your brand. Helping our clients build brand image and communicate brand values has been our priority for more than 80 years now. From local projects to nationwide roll outs, we bring a level of custom craftsmanship, quality fabrication, creativity and collaborative customer service to every job that we’re confident you’ll find is unmatched.";
+  const heroDesc =
+    "Here’s what we know: People will form an impression of your business based on a host of factors. One of those is the image you present with your signage. Often the first point of contact you have with potential customers, your signage speaks volumes about you and your brand. Helping our clients build brand image and communicate brand values has been our priority for more than 80 years now. From local projects to nationwide roll outs, we bring a level of custom craftsmanship, quality fabrication, creativity and collaborative customer service to every job that we’re confident you’ll find is unmatched.";
   const channelLettersDesc = [
     "Channel letters are custom-made metal or plastic letters commonly used in exterior signage on public and commercial buildings, and often internally illuminated. Unlit three dimensional letters that are applied to sign panels or monuments are usually referred to as dimensional letters.",
     "Channel letters may be flush mounted (attached directly to the building facade), or they may be mounted on a raceway or wireway. A raceway is a rectangular mounting structure which serves as both a container for the sign’s electrical components (such as a power supply) and a mounting structure.",
@@ -80,24 +53,96 @@ const Content = () => {
     "These sizes include poly signs that have square corners, round corners and even common special shapes such as octagon, circle, triangle and shield.",
   ];
   const engravingSignsDesc = [
-    "Here’s what we know: People will form an impression of your business based on a host of factors. One of those is the image you present with your signage. Often the first point of contact you have with potential customers, your signage speaks volumes about you and your brand. Helping our clients build brand image and communicate brand values has been our priority for more than 80 years now. From local projects to nationwide roll outs, we bring a level of custom craftsmanship, quality fabrication, creativity and collaborative customer service to every job that we’re confident you’ll find is unmatched."
+    "Here’s what we know: People will form an impression of your business based on a host of factors. One of those is the image you present with your signage. Often the first point of contact you have with potential customers, your signage speaks volumes about you and your brand. Helping our clients build brand image and communicate brand values has been our priority for more than 80 years now. From local projects to nationwide roll outs, we bring a level of custom craftsmanship, quality fabrication, creativity and collaborative customer service to every job that we’re confident you’ll find is unmatched.",
   ];
   return (
     <>
-      <Hero smallTitle="Our Capabilities" title="Signage" subTitle="Make an impression. First time. Every time." description={heroDesc} imagesNames={["mountain-works.png", "ds-works.png", "subway-works.png", "wine-works.png"]} />
-      <Icons iconText={iconText}/>
-      <Images imagesNames={["mountain-works.png", "ds-works.png", "subway-works.png", "wine-works.png"]} />
-      <TextImage id="channel-letters" isImageLeft isBgGray title={["Channel", "Letters"]} description={channelLettersDesc} imageName="mountain-works.png" />
-      <TextImage id="halo-letters" title={["Halo", "Letters"]} description={haloLettersDesc} imageName="ds-works.png" />
-      <TextImage id="cabinet-signs" isImageLeft isBgGray title={["Cabinet", "Signs"]} description={cabinetSignsDesc} imageName="mountain-works.png" />
-      <TextImage id="push-thru-letters" title={["Push Thru", "Letters"]} description={pushThruLettersDesc} imageName="ds-works.png" />
-      <TextImage id="cast-letters" isImageLeft isBgGray title={["Cast", "Letters"]} description={castLettersDesc} imageName="mountain-works.png" />
-      <TextImage id="plastic-letters" title={["Plastic", "Letters"]} description={plasticLettersDesc} imageName="ds-works.png" />
-      <TextImage id="monument-signs" isImageLeft isBgGray title={["Monument", "Signs"]} description={monumentSignsDesc} imageName="mountain-works.png" />
-      <TextImage id="poly-signs" title={["Poly", "Signs"]} description={polySignsDesc} imageName="ds-works.png" />
-      <TextImage id="engraving" isImageLeft isBgGray title={["Engraving", "Signs"]} description={engravingSignsDesc} imageName="mountain-works.png" />
+      <Hero
+        smallTitle="Our Capabilities"
+        title="Signage"
+        subTitle="Make an impression. First time. Every time."
+        description={heroDesc}
+        imagesNames={[
+          "mountain-works.png",
+          "ds-works.png",
+          "subway-works.png",
+          "wine-works.png",
+        ]}
+      />
+      <Images
+        imagesNames={[
+          "mountain-works.png",
+          "ds-works.png",
+          "subway-works.png",
+          "wine-works.png",
+        ]}
+      />
+      <TextImage
+        id="channel-letters"
+        isImageLeft
+        isBgGray
+        title={["Channel", "Letters"]}
+        description={channelLettersDesc}
+        imageName="mountain-works.png"
+      />
+      <TextImage
+        id="halo-letters"
+        title={["Halo", "Letters"]}
+        description={haloLettersDesc}
+        imageName="ds-works.png"
+      />
+      <TextImage
+        id="cabinet-signs"
+        isImageLeft
+        isBgGray
+        title={["Cabinet", "Signs"]}
+        description={cabinetSignsDesc}
+        imageName="mountain-works.png"
+      />
+      <TextImage
+        id="push-thru-letters"
+        title={["Push Thru", "Letters"]}
+        description={pushThruLettersDesc}
+        imageName="ds-works.png"
+      />
+      <TextImage
+        id="cast-letters"
+        isImageLeft
+        isBgGray
+        title={["Cast", "Letters"]}
+        description={castLettersDesc}
+        imageName="mountain-works.png"
+      />
+      <TextImage
+        id="plastic-letters"
+        title={["Plastic", "Letters"]}
+        description={plasticLettersDesc}
+        imageName="ds-works.png"
+      />
+      <TextImage
+        id="monument-signs"
+        isImageLeft
+        isBgGray
+        title={["Monument", "Signs"]}
+        description={monumentSignsDesc}
+        imageName="mountain-works.png"
+      />
+      <TextImage
+        id="poly-signs"
+        title={["Poly", "Signs"]}
+        description={polySignsDesc}
+        imageName="ds-works.png"
+      />
+      <TextImage
+        id="engraving"
+        isImageLeft
+        isBgGray
+        title={["Engraving", "Signs"]}
+        description={engravingSignsDesc}
+        imageName="mountain-works.png"
+      />
     </>
-  )
-}
+  );
+};
 
-export default Content
+export default Content;
