@@ -11,7 +11,7 @@ const Icons = ({ iconText }: { iconText: string[] }) => {
         <ul className="text-medium space-y-4">
           {iconText.map((menu, index) => {
             return (
-              <li className="flex items-center">
+              <li key={index} className="flex items-center">
                 <FontAwesomeIcon
                   className="w-3.5 mr-5 text-giants-orange"
                   icon={faArrowRight}

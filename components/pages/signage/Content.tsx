@@ -5,6 +5,15 @@ import Images from "@/components/Images";
 import TextImage from "@/components/TextImage";
 
 const Content = () => {
+  const iconText = [
+    "Exterior & Interior",
+    "Digital",
+    "Graphic Style",
+    "Architectural & Recovery",
+    "Wayfinding",
+    "Pylon Signage & Conversions",
+  ];
+
   const heroDesc =
     "Here’s what we know: People will form an impression of your business based on a host of factors. One of those is the image you present with your signage. Often the first point of contact you have with potential customers, your signage speaks volumes about you and your brand. Helping our clients build brand image and communicate brand values has been our priority for more than 80 years now. From local projects to nationwide roll outs, we bring a level of custom craftsmanship, quality fabrication, creativity and collaborative customer service to every job that we’re confident you’ll find is unmatched.";
   const channelLettersDesc = [
@@ -68,76 +77,59 @@ const Content = () => {
           "subway-works.png",
           "wine-works.png",
         ]}
-      />
-      <Images
-        imagesNames={[
-          "mountain-works.png",
-          "ds-works.png",
-          "subway-works.png",
-          "wine-works.png",
-        ]}
+        iconText={iconText}
       />
       <TextImage
         id="channel-letters"
-        isImageLeft
-        isBgGray
-        title={["Channel", "Letters"]}
+        title="Channel Letters"
         description={channelLettersDesc}
         imageName="mountain-works.png"
       />
       <TextImage
         id="halo-letters"
-        title={["Halo", "Letters"]}
+        title="Halo Letters"
         description={haloLettersDesc}
         imageName="ds-works.png"
       />
       <TextImage
         id="cabinet-signs"
-        isImageLeft
-        isBgGray
-        title={["Cabinet", "Signs"]}
+        title="Cabinet Signs"
         description={cabinetSignsDesc}
         imageName="mountain-works.png"
       />
       <TextImage
         id="push-thru-letters"
-        title={["Push Thru", "Letters"]}
+        title="Push Thru Letters"
         description={pushThruLettersDesc}
         imageName="ds-works.png"
       />
       <TextImage
         id="cast-letters"
-        isImageLeft
-        isBgGray
-        title={["Cast", "Letters"]}
+        title="Cast Letters"
         description={castLettersDesc}
         imageName="mountain-works.png"
       />
       <TextImage
         id="plastic-letters"
-        title={["Plastic", "Letters"]}
+        title="Plastic Letters"
         description={plasticLettersDesc}
         imageName="ds-works.png"
       />
       <TextImage
         id="monument-signs"
-        isImageLeft
-        isBgGray
-        title={["Monument", "Signs"]}
+        title="Monument Signs"
         description={monumentSignsDesc}
         imageName="mountain-works.png"
       />
       <TextImage
         id="poly-signs"
-        title={["Poly", "Signs"]}
+        title="Poly Signs"
         description={polySignsDesc}
         imageName="ds-works.png"
       />
       <TextImage
         id="engraving"
-        isImageLeft
-        isBgGray
-        title={["Engraving", "Signs"]}
+        title="Engraving Signs"
         description={engravingSignsDesc}
         imageName="mountain-works.png"
       />

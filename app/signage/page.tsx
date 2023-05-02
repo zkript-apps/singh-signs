@@ -13,7 +13,7 @@ export async function generateMetadata() {
 export default function Signage() {
   return (
     <>
-      <Header title="Signage" root="Home" subTitle='Signage' />
+      <Header title="Signage" root="Home"  />
       <Content />
     </>
   );

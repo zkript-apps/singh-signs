@@ -1,39 +1,20 @@
-"use client"
-import React from 'react'
-import Hero from '@/components/Hero';
-import Images from '@/components/Images';
-import TextImage from '@/components/TextImage';
-import { faFlag, faHouseChimney, faMonument, faSignHanging, faSignsPost, faWarehouse } from '@fortawesome/free-solid-svg-icons';
-import Icons from '@/components/Icons';
+"use client";
+import React from "react";
+import Hero from "@/components/Hero";
+import Images from "@/components/Images";
+import TextImage from "@/components/TextImage";
 
 const Content = () => {
   const iconText = [
-    {
-      icon: faSignHanging,
-      text: "Channel Letters"
-    },
-    {
-      icon: faMonument,
-      text: "Monument Sign"
-    },
-    {
-      icon: faFlag,
-      text: "Pole Signs"
-    },
-    {
-      icon: faWarehouse,
-      text: "Cabinet Signs"
-    },
-    {
-      icon: faHouseChimney,
-      text: "Vynil Indoor and Outdoor"
-    },
-    {
-      icon: faSignsPost,
-      text: "Awning"
-    },
+    "Channel Letters",
+    "Monument Sign",
+    "Pole Signs",
+    "Cabinet Signs",
+    "Vynil Indoor and Outdoor",
+    "Awning",
   ];
-  const heroDesc = "At Fremont Sign Company, quality is the goal of the installation process. The signs are being installed with all product specific requirements in mind. We make sure that the sign is well placed, visible and durable. Our installation teams are well organized and very knowledgeable. Rich experience is an integral part of our team-building process. Installing a sign is part of the process of creating unique signage that stands out. We make sure that the signs are installed free of defects and looking great. Eye-catching signs send a strong message to the audience, and when properly installed, they can support the business goals of any organization.";
+  const heroDesc =
+    "At Fremont Sign Company, quality is the goal of the installation process. The signs are being installed with all product specific requirements in mind. We make sure that the sign is well placed, visible and durable. Our installation teams are well organized and very knowledgeable. Rich experience is an integral part of our team-building process. Installing a sign is part of the process of creating unique signage that stands out. We make sure that the signs are installed free of defects and looking great. Eye-catching signs send a strong message to the audience, and when properly installed, they can support the business goals of any organization.";
   const channelLettersDesc = [
     "Channel letters are custom-made metal or plastic letters commonly used in exterior signage on public and commercial buildings, and often internally illuminated. Unlit three dimensional letters that are applied to sign panels or monuments are usually referred to as dimensional letters.",
     "Channel letters may be flush mounted (attached directly to the building facade), or they may be mounted on a raceway or wireway. A raceway is a rectangular mounting structure which serves as both a container for the sign’s electrical components (such as a power supply) and a mounting structure.",
@@ -72,17 +53,58 @@ const Content = () => {
   ];
   return (
     <>
-      <Hero smallTitle="Our Capabilities" title="Installation" subTitle="Clean, professional sign installation process." description={heroDesc} imagesNames={["installation.png", "installation-2.png", "installation-3.png", "installation-4.png","installation-5.png"]} />
-      <Icons iconText={iconText}/>
-      <Images imagesNames={["installation.png", "installation-2.png", "installation-3.png", "installation-4.png","installation-4.png"]} />
-      <TextImage id="channel-letters" isImageLeft isBgGray title={["Channel", "Letters"]} description={channelLettersDesc} imageName="installation.png" />
-      <TextImage id="monument-signs" title={["Monument", "Signs"]} description={monumentLettersDesc} imageName="installation-2.png" />
-      <TextImage id="pole-signs" isImageLeft isBgGray title={["Pole", "Signs"]} description={poleSignsDesc} imageName="installation-4.png" />
-      <TextImage id="cabinet-signs" title={["Cabinet", "Signs"]} description={cabinetSignsDesc} imageName="installation-5.png" />
-      <TextImage id="vinyl-indoor-and-outdoor" isImageLeft isBgGray title={["Vinyl", "Indoor and Outdoor"]} description={vinylDesc} imageName="installation-3.png" />
-      <TextImage id="awning" title={["Awning", "Signs"]} description={ledDesc} imageName="installation.png" />
+      <Hero
+        iconText={iconText}
+        smallTitle="Our Capabilities"
+        title="Installation"
+        subTitle="Clean, professional sign installation process."
+        description={heroDesc}
+        imagesNames={[
+          "installation.png",
+          "installation-2.png",
+          "installation-3.png",
+          "installation-4.png",
+          "installation-5.png",
+        ]}
+      />
+      <TextImage
+        id="channel-letters"
+        title="Channel Letters"
+        description={channelLettersDesc}
+        imageName="installation.png"
+      />
+      <TextImage
+        id="monument-signs"
+        title="Monument Signs"
+        description={monumentLettersDesc}
+        imageName="installation-2.png"
+      />
+      <TextImage
+        id="pole-signs"
+        title="Pole Signs"
+        description={poleSignsDesc}
+        imageName="installation-4.png"
+      />
+      <TextImage
+        id="cabinet-signs"
+        title="Cabinet Signs"
+        description={cabinetSignsDesc}
+        imageName="installation-5.png"
+      />
+      <TextImage
+        id="vinyl-indoor-and-outdoor"
+        title="Vinyl Indoor and Outdoor"
+        description={vinylDesc}
+        imageName="installation-3.png"
+      />
+      <TextImage
+        id="awning"
+        title="Awning Signs"
+        description={ledDesc}
+        imageName="installation.png"
+      />
     </>
-  )
-}
+  );
+};
 
-export default Content
+export default Content;

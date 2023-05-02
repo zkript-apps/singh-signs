@@ -1,89 +1,84 @@
-import Image from 'next/image'
-import React from 'react'
-
+"use client";
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/swiper-bundle.css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import Image from "next/image";
+import { Navigation, Pagination, Autoplay } from "swiper";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 const Clients = () => {
-    return (
-        <div className="py-24 px-6 lg:px-52 xl:px-80 bg-[url('/world-bg.png')]">
-            <h3 className="font-bold text-4xl text-giants-orange text-center">
-                OUR VALUED <span className="text-oxford-blue">CLIENTS</span>
-            </h3>
-            <p className="text-sm text-center mt-4 px-20 xl:px-44">We bring all our skill and experience to bear on every project, small or large, simple or complex, each and every time. We’re dedicated to presenting every client’s brand identity accurately and effectively.</p>
-            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 lg:px-12 xl:px-44 justify-center mt-16 place-items-center">
+  const logoImages = [
+    "/starbucks-logo.png",
+    "/ford-logo.png",
+    "/subway-logo.png",
+    "/comcast-logo.png",
+    "/dennys-logo.png",
+    "/att-logo.png",
+    "/taco-bell-logo.png",
+    "/kfc-logo.png",
+    "/holiday-inn-logo.png",
+  ];
+  return (
+    <div className="pt-10 pb-20 px-6 xl:px-72 items-center">
+      <div className="hidden md:flex items-center">
+        <Swiper
+          className="basis-4/6 mr-10"
+          loop
+          slidesPerView={4}
+          spaceBetween={10}
+          centeredSlides={false}
+          modules={[Navigation, Pagination, Autoplay]}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+        >
+          {logoImages.map((item, index) => {
+            return (
+              <SwiperSlide key={index}>
                 <div>
-                    <Image
-                        src="/starbucks-logo.png"
-                        width="160"
-                        height="160"
-                        alt="Works"
-                    />
+                  <Image src={item} width="160" height="160" alt={item} />
                 </div>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+        <h3 className="basis-2/6 text-2xl text-oxford-blue">
+          Trusted By 500+ Valued Clients Nationwide
+        </h3>
+      </div>
+      <div className="block md:hidden items-center">
+        <Swiper
+          className="basis-4/6 mb-10"
+          loop
+          slidesPerView={3}
+          spaceBetween={10}
+          centeredSlides={false}
+          modules={[Navigation, Pagination, Autoplay]}
+          autoplay={{
+            delay: 1500,
+            disableOnInteraction: false,
+          }}
+        >
+          {logoImages.map((item, index) => {
+            return (
+              <SwiperSlide key={index}>
                 <div>
-                    <Image
-                        src="/ford-logo.png"
-                        width="160"
-                        height="160"
-                        alt="Works"
-                    />
+                  <Image src={item} width="160" height="160" alt={item} />
                 </div>
-                <div>
-                    <Image
-                        src="/subway-logo.png"
-                        width="160"
-                        height="160"
-                        alt="Works"
-                    />
-                </div>
-                <div>
-                    <Image
-                        src="/comcast-logo.png"
-                        width="160"
-                        height="160"
-                        alt="Works"
-                    />
-                </div>
-                <div>
-                    <Image
-                        src="/dennys-logo.png"
-                        width="160"
-                        height="160"
-                        alt="Works"
-                    />
-                </div>
-                <div>
-                    <Image
-                        src="/att-logo.png"
-                        width="160"
-                        height="160"
-                        alt="Works"
-                    />
-                </div>
-                <div>
-                    <Image
-                        src="/taco-bell-logo.png"
-                        width="160"
-                        height="160"
-                        alt="Works"
-                    />
-                </div>
-                <div>
-                    <Image
-                        src="/kfc-logo.png"
-                        width="160"
-                        height="160"
-                        alt="Works"
-                    />
-                </div>
-                <div>
-                    <Image
-                        src="/holiday-inn-logo.png"
-                        width="160"
-                        height="160"
-                        alt="Works"
-                    />
-                </div>         
-            </div>
-        </div>
-    )
-}
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+        <h3 className="basis-2/6 text-2xl text-oxford-blue text-center">
+          Trusted By 500+ Valued Clients Nationwide
+        </h3>
+      </div>
+    </div>
+  );
+};
 
-export default Clients
+export default Clients;

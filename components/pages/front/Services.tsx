@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -45,7 +46,7 @@ const Services = () => {
                     <p className="text-light-gray font-medium leading-relaxed">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </p>
-                    <Link href="/">
+                    <Link href={`${subMenu.url}`}>
                       <button className="font-semibold text-shady-white hover:scale-90 transition hover:text-giants-orange mt-3">
                         Read More{" "}
                         <FontAwesomeIcon className="w-5" icon={faArrowRight} />

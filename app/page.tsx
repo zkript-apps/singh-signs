@@ -1,11 +1,10 @@
-import Clients from "@/components/pages/front/Clients";
 import FeaturedWorks from "@/components/pages/front/FeaturedWorks";
 import Hero from "@/components/pages/front/Hero";
 import Mission from "@/components/pages/front/Mission";
 import Services from "@/components/pages/front/Services";
 import Testimonial from "@/components/pages/front/Testimonial";
 import WhyChooseUs from "@/components/pages/front/WhyChooseUs";
-import Clientss from "@/components/pages/front/Clientss";
+import Clients from "@/components/pages/front/Clients";
 import TrustedByClient from "@/components/pages/front/TrustedByClient";
 import OurTeam from "@/components/pages/front/OurTeam";
 import MakeAppointment from "@/components/pages/front/MakeAppointment";
@@ -18,7 +17,7 @@ export default function Home() {
       <Services />
       <Testimonial />
       <WhyChooseUs />
-      <Clientss />
+      <Clients />
       <TrustedByClient />
       <OurTeam />
       <MakeAppointment />

@@ -1,39 +1,21 @@
-"use client"
-import React from 'react'
-import Hero from '@/components/Hero';
-import Images from '@/components/Images';
-import TextImage from '@/components/TextImage';
-import { faChartColumn, faFlag, faGears, faLightbulb, faList, faWrench } from '@fortawesome/free-solid-svg-icons';
-import Icons from '@/components/Icons';
+"use client";
+import React from "react";
+import Hero from "@/components/Hero";
+import Images from "@/components/Images";
+import TextImage from "@/components/TextImage";
 
 const Content = () => {
   const iconText = [
-    {
-      icon: faLightbulb,
-      text: "LED Lighting"
-    },
-    {
-      icon: faGears,
-      text: "Retrofits"
-    },
-    {
-      icon: faWrench,
-      text: "Installation"
-    },
-    {
-      icon: faList,
-      text: "Site Audits"
-    },
-    {
-      icon: faChartColumn,
-      text: "ROI Analysis"
-    },
-    {
-      icon: faFlag,
-      text: "Reporting & Post-Conversion"
-    },
+    "LED Lighting",
+    "Retrofits",
+    "Installation",
+    "Site Audits",
+    "ROI Analysis",
+    "Reporting & Post-Conversion",
   ];
-  const heroDesc = "For our clients, lighting is no afterthought. It’s a make or break factor in the success of their business and their brand and that recognition is what brought them to Triangle. We’re are lighting retrofit experts, focusing on replacing inefficient lighting with state of the art energy efficient long lasting LED lamps and fixtures. At Triangle we only retrofit with DLC approved and listed products. This distinction immediately qualifies our clients to receive every single financial incentive their power company offers. These incentives routinely total thousands of dollars per site. Likewise these quality lighting products typically offer up to 10-year performance warranties.";
+
+  const heroDesc =
+    "For our clients, lighting is no afterthought. It’s a make or break factor in the success of their business and their brand and that recognition is what brought them to Triangle. We’re are lighting retrofit experts, focusing on replacing inefficient lighting with state of the art energy efficient long lasting LED lamps and fixtures. At Triangle we only retrofit with DLC approved and listed products. This distinction immediately qualifies our clients to receive every single financial incentive their power company offers. These incentives routinely total thousands of dollars per site. Likewise these quality lighting products typically offer up to 10-year performance warranties.";
   const parkingLotsLightsDesc = [
     "Parking Lot Lighting is a term to describe the outdoor lighting that is commonly mounted on poles and located in parking lots, pathways and driveways. This type of exterior lighting is generally used to provide illumination to areas for vehicle and pedestrian use, with the most frequent attribute being that the light fixtures are mounted to poles. It is not uncommon to see multiple fixtures mounted on a single pole, and the specific mounting methods may vary significantly.",
     "Most existing Parking and Area Lighting applications utilize High Intensity Discharge (HID) lamps such as Metal Halide, High Pressure Sodium, and – if they are very old – Mercury Vapor Lamps.",
@@ -61,15 +43,46 @@ const Content = () => {
   ];
   return (
     <>
-      <Hero smallTitle="Our Capabilities" title="Lighting" subTitle="Correct lighting requires experience." description={heroDesc} imagesNames={["parking1.jpg", "parking2.jpg", "parking3.jpg", "parking4.jpg","parking5.jpg"]} />
-      <Icons iconText={iconText}/>
-      <Images imagesNames={["Sarea1.jpg", "Sarea2.jpg", "Sarea3.jpg", "Sarea4.jpg"]} />
-      <TextImage id="parking-lot-lights" isImageLeft isBgGray title={["Parking Lot", "Lights"]} description={parkingLotsLightsDesc} imageName="parking4.jpg" />
-      <TextImage id="security-area-lights" title={["Security Area", "Lights"]} description={securityAreaLightsDesc} imageName="Sarea1.jpg" />
-      <TextImage id="exterior-&-interior-building-lights" isImageLeft isBgGray title={["Exterior & Interior Building", "Lights"]} description={exteriorLightsDesc} imageName="Sarea2.jpg" />
-      <TextImage id="led-lighting-for-restaurant-bar-or-home" title={["LED Lighting", "for Restaurant Bar or Home"]} description={ledLightingDesc} imageName="parking3.jpg" />
+      <Hero
+        iconText={iconText}
+        smallTitle="Our Capabilities"
+        title="Lighting"
+        subTitle="Correct lighting requires experience."
+        description={heroDesc}
+        imagesNames={[
+          "parking1.jpg",
+          "parking2.jpg",
+          "parking3.jpg",
+          "parking4.jpg",
+          "parking5.jpg",
+        ]}
+      />
+      <TextImage
+        id="parking-lot-lights"
+        title="Parking Lot"
+        description={parkingLotsLightsDesc}
+        imageName="parking4.jpg"
+      />
+      <TextImage
+        id="security-area-lights"
+        title="Security Area Lights"
+        description={securityAreaLightsDesc}
+        imageName="Sarea1.jpg"
+      />
+      <TextImage
+        id="exterior-&-interior-building-lights"
+        title="Exterior & Interior Building Lights"
+        description={exteriorLightsDesc}
+        imageName="Sarea2.jpg"
+      />
+      <TextImage
+        id="led-lighting-for-restaurant-bar-or-home"
+        title="LED Lighting for Restaurant Bar or Home"
+        description={ledLightingDesc}
+        imageName="parking3.jpg"
+      />
     </>
-  )
-}
+  );
+};
 
-export default Content
+export default Content;

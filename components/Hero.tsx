@@ -17,27 +17,23 @@ import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { NAVIGATION_MENU } from "@/helpers/constants";
 import Icons from "./Icons";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Hero = ({
   title,
   subTitle,
   description,
   imagesNames,
+  iconText,
 }: {
   smallTitle: string;
   title: string;
   subTitle: string;
   description: string;
   imagesNames: string[];
+  iconText: string[];
 }) => {
-  const iconText = [
-    "Exterior & Interior",
-    "Digital",
-    "Graphic Style",
-    "Architectural & Recovery",
-    "Wayfinding",
-    "Pylon Signage & Conversions",
-  ];
+  const pathname = usePathname();
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-20 gap-8 py-20 px-6 xl:px-80 items-start">
@@ -100,7 +96,11 @@ const Hero = ({
                           className="w-3.5 mr-5 text-giants-orange"
                           icon={faArrowRight}
                         />
-                        <h4 className="text-xl font-medium transition hover:text-giants-orange">
+                        <h4
+                          className={`text-xl font-medium transition hover:text-giants-orange ${
+                            pathname == subMenu.url ? "text-giants-orange" : ""
+                          }`}
+                        >
                           {str}
                         </h4>
                       </Link>

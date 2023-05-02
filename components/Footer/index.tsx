@@ -13,7 +13,7 @@ import { faCopyright } from "@fortawesome/free-regular-svg-icons";
 const Footer = () => {
   return (
     <>
-      <div className="bg-[url('/topFooterImage.png')] bg-cover bg-no-repeat bg-opacity-50 bg-oxford-blue ">
+      <div className="bg-[url('/topFooterImage.png')] lg:mt-28 bg-cover bg-no-repeat bg-opacity-50 bg-oxford-blue ">
         <div className="flex flex-col-reverse lg:flex-row max-w-7xl	m-auto px-6">
           <div className="relative w-full m-auto lg:m-0 max-w-md lg:ml-20">
             <Image
