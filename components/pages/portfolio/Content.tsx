@@ -1,39 +1,19 @@
-"use client"
-import React from 'react'
-import Hero from '@/components/Hero';
-import Images from '@/components/Images';
-import TextImage from '@/components/TextImage';
-import { faBinoculars, faComputer, faPaintBrush, faRulerCombined, faSignHanging } from '@fortawesome/free-solid-svg-icons';
-import Icons from '@/components/Icons';
+"use client";
+import React from "react";
+import Hero from "@/components/Hero";
+import TextImage from "@/components/TextImage";
 
 const Content = () => {
   const iconText = [
-    {
-      icon: faPaintBrush,
-      text: "Exterior & Interior"
-    },
-    {
-      icon: faComputer,
-      text: "Digital"
-    },
-    {
-      icon: faPaintBrush,
-      text: "Graphic Style"
-    },
-    {
-      icon: faRulerCombined,
-      text: "Architectural & Recovery"
-    },
-    {
-      icon: faBinoculars,
-      text: "Wayfinding"
-    },
-    {
-      icon: faSignHanging,
-      text: "Pylon Signage & Conversions"
-    },
+    "Exterior & Interior",
+    "Digital",
+    "Graphic Style",
+    "Architectural & Recovery",
+    "Wayfinding",
+    "Pylon Signage & Conversions",
   ];
-  const heroDesc = "We offer the complete solution from sign design through to installation. Fremont Sign Company has earned the regard of its long-standing customers by exhibiting consistently our dedication to client administration, development, and meticulousness. Your image and its acknowledgment are enormously imperative in the aggressive universe of retail and we guarantee consistency of use over an assortment of areas; from the high road to retail stop… inside and out! Fremont Sign Company & Graphic comprehend the significance of working with different experts like shop-fitters, modelers and inside fashioners to ensure your retail signs are of the most noteworthy determination and quality. Our signage portfolio showcases the huge variety of high-quality commercial & vehicle signage that we are capable of at Fremont Sign Company.";
+  const heroDesc =
+    "We offer the complete solution from sign design through to installation. Fremont Sign Company has earned the regard of its long-standing customers by exhibiting consistently our dedication to client administration, development, and meticulousness. Your image and its acknowledgment are enormously imperative in the aggressive universe of retail and we guarantee consistency of use over an assortment of areas; from the high road to retail stop… inside and out! Fremont Sign Company & Graphic comprehend the significance of working with different experts like shop-fitters, modelers and inside fashioners to ensure your retail signs are of the most noteworthy determination and quality. Our signage portfolio showcases the huge variety of high-quality commercial & vehicle signage that we are capable of at Fremont Sign Company.";
   const channelDesc = [
     "Channel letters are custom-made metal or plastic letters commonly used in exterior signage on public and commercial buildings, and often internally illuminated. Unlit three dimensional letters that are applied to sign panels or monuments are usually referred to as dimensional letters.",
     "Channel letters may be flush mounted (attached directly to the building facade), or they may be mounted on a raceway or wireway. A raceway is a rectangular mounting structure which serves as both a container for the sign’s electrical components (such as a power supply) and a mounting structure.",
@@ -62,16 +42,51 @@ const Content = () => {
   ];
   return (
     <>
-      <Hero smallTitle="Our Capabilities" title="PORTFOLIO" subTitle="Make an impression. First time. Every time." description={heroDesc} imagesNames={["mountain-works.png", "ds-works.png", "subway-works.png", "wine-works.png"]} />
-      <Icons iconText={iconText}/>
-      <Images imagesNames={["mountain-works.png", "ds-works.png", "subway-works.png", "wine-works.png"]} />
-      <TextImage id="channel-letters" isImageLeft isBgGray title={["Channel", "Letters"]} description={channelDesc} imageName="mountain-works.png" />
-      <TextImage id="monument-signs" title={["Monument", "Signs"]} description={monumentDesc} imageName="ds-works.png" />
-      <TextImage id="poly-signs" isImageLeft isBgGray title={["Poly", "Signs"]} description={polyDesc} imageName="mountain-works.png" />
-      <TextImage id="light-box" title={["Light", "Box"]} description={lightBoxDesc} imageName="ds-works.png" />
-      <TextImage id="vehicle-wraps" isImageLeft isBgGray title={["Vehicle", "Wraps"]} description={vehicleDesc} imageName="mountain-works.png" />
+      <Hero
+        iconText={iconText}
+        smallTitle="Our Capabilities"
+        title="PORTFOLIO"
+        subTitle="Make an impression. First time. Every time."
+        description={heroDesc}
+        imagesNames={[
+          "mountain-works.png",
+          "ds-works.png",
+          "subway-works.png",
+          "wine-works.png",
+        ]}
+      />
+      <TextImage
+        id="channel-letters"
+        title="Channel Letters"
+        description={channelDesc}
+        imageName="mountain-works.png"
+      />
+      <TextImage
+        id="monument-signs"
+        title="Monument Signs"
+        description={monumentDesc}
+        imageName="ds-works.png"
+      />
+      <TextImage
+        id="poly-signs"
+        title="Poly Signs"
+        description={polyDesc}
+        imageName="mountain-works.png"
+      />
+      <TextImage
+        id="light-box"
+        title="Light Box"
+        description={lightBoxDesc}
+        imageName="ds-works.png"
+      />
+      <TextImage
+        id="vehicle-wraps"
+        title="Vehicle Wraps"
+        description={vehicleDesc}
+        imageName="mountain-works.png"
+      />
     </>
-  )
-}
+  );
+};
 
-export default Content
+export default Content;
