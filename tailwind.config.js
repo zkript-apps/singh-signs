@@ -23,6 +23,7 @@ module.exports = {
         13: "13",
         14: "14",
         15: "15",
+
         16: "16",
         17: "17",
         18: "18",
@@ -49,6 +50,8 @@ module.exports = {
         "pure-white": "#FFFFFF",
         "light-gray": "#EAEAEA",
         "darker-gray": "#666666",
+        "light-blue": "#F6F9FF",
+        "inputfield-bg": "#FAFAFA",
 
         "sgbus-green": "#81D741",
         seasalt: "#FAFAFA",
