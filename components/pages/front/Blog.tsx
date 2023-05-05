@@ -54,7 +54,10 @@ function Blog() {
               />
               <h3 className="text-2xl">{item.title}</h3>
               <p className="font-medium">{item.description}</p>
-              <Link href="/">
+              <Link
+                href="/"
+                className="font-semibold text-shady-white transition duration-500 hover:text-oxford-blue mt-5"
+              >
                 <button className="font-semibold text-shady-white transition duration-500 hover:text-oxford-blue mt-5">
                   Read More{" "}
                   <FontAwesomeIcon className="w-5" icon={faArrowRight} />
