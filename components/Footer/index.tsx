@@ -90,7 +90,7 @@ const Footer = () => {
                 let str = menu.name;
                 str = str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
                 return (
-                  <li>
+                  <li key={index}>
                     <Link href={menu.url} className="flex items-center">
                       <FontAwesomeIcon
                         className="w-3.5 mr-5 text-giants-orange"

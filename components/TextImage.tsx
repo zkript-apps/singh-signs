@@ -40,7 +40,11 @@ const TextImage = ({
           {title}
         </h2>
         {description.map((desc, index) => {
-          return <p className="font-medium text-darker-gray">{desc}</p>;
+          return (
+            <p key={index} className="font-medium text-darker-gray">
+              {desc}
+            </p>
+          );
         })}
         <Link href="/">
           <button className="shadow-lg bg-oxford-blue mt-5 lg:mt-10 text-light-gray px-6 py-3 hover:bg-oxford-blue/80 rounded transition ease-in-out hover:scale-90">

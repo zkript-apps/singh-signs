@@ -64,7 +64,7 @@ const Hero = ({
         </Swiper>
         <h2 className="text-3xl lg:text-5xl text-oxford-blue">{title}</h2>
         <p className="relative text-xl italic text-darker-gray bg-light-gray/50 p-5 rounded-md">
-          "{subTitle}"
+          &quot;{subTitle}&quot;
           <span>
             <FontAwesomeIcon
               icon={faQuoteRight}
