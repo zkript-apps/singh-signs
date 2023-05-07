@@ -119,11 +119,6 @@ const Hero = ({
           <h2 className="text-shady-white text-3xl lg:text-4xl">
             Making Your Life Easier
           </h2>
-          <Link href="/">
-            <button className="shadow-lg mt-8 bg-oxford-blue text-light-gray px-6 py-3 hover:bg-oxford-blue/80 rounded transition ease-in-out hover:scale-90">
-              Make Appointment
-            </button>
-          </Link>
         </div>
 
         <div className="bg-oxford-blue p-8 rounded-lg">

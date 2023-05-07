@@ -6,9 +6,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowRight,
   faChevronRight,
+  faCommentDots,
 } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
-import { faCopyright } from "@fortawesome/free-regular-svg-icons";
+import { faCopyright, faCreditCard } from "@fortawesome/free-regular-svg-icons";
 
 const Footer = () => {
   return (
@@ -24,38 +25,35 @@ const Footer = () => {
               alt="newsletterMan"
             />
           </div>
-          <div className="py-10 lg:py-16 flex flex-col m-auto w-full text-shady-white space-y-4">
+          <div className="py-10 lg:py-16 flex flex-col items-center lg:items-start m-auto w-full text-shady-white space-y-4">
             <p className="font-bold text-shady-white tracking-[0.2em]">
-              NEWSLETTER
+              GOT A QUESTION?
             </p>
 
             <h2 className="text-3xl lg:text-5xl font-bold leading-tight">
-              Subscribe Our Newsletter & Get Discount
+              We’re here to help
             </h2>
             <label
               htmlFor="subscribe"
               className="text-xl text-giants-orange font-bold"
             >
-              Subscribe Blocks Newsletter
+              Send us an email or call us at 510-573-3162
             </label>
-            <div className="flex flex-col sm:flex-row w-full">
-              <input
-                type="email"
-                id="subscribe"
-                className="p-2 rounded-md flex-1 mr-4 mb-5 sm:mb-0 w-full text-black font-semibold m-w-[463px]  placeholder-slate-300 placeholder:font-bold outline-none border-2 focus:border-blue-400"
-                placeholder="Email"
-              />
-              <button
-                type="button"
-                className="bg-giants-orange p-2 sm:p-3.5 rounded-md font-semibold transition duration-300 hover:bg-transparent border-2 border-giants-orange"
+            <div className="flex flex-col justify-center lg:justify-start sm:flex-row w-full sm:space-x-5">
+              <Link
+                href="/contact"
+                className="shadow-lg mt-8 bg-oxford-blue text-light-gray px-6 py-3 hover:bg-oxford-blue/80 rounded transition ease-in-out hover:scale-90"
               >
-                Subscribe Now{" "}
-                <FontAwesomeIcon
-                  className="h-3.5 -mr-1"
-                  icon={faChevronRight}
-                />
-                <FontAwesomeIcon className="h-3.5" icon={faChevronRight} />
-              </button>
+                GET IN TOUCH
+                <FontAwesomeIcon className="h-5 ml-2" icon={faCommentDots} />
+              </Link>
+              <Link
+                href="/make-payment"
+                className="shadow-lg mt-8 bg-giants-orange text-light-gray px-6 py-3 hover:bg-giants-orange/80 rounded transition ease-in-out hover:scale-90"
+              >
+                MAKE PAYMENT
+                <FontAwesomeIcon className="h-5 ml-2" icon={faCreditCard} />
+              </Link>
             </div>
           </div>
         </div>
