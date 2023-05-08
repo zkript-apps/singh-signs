@@ -4,7 +4,7 @@ import { metaBuilder } from "@/helpers/metaBuilder";
 
 export async function generateMetadata() {
   return metaBuilder({
-    title: "Services > Sign Master Program - Fremont Sign Company",
+    title: "Services > Sign Master Program - Singh Signs",
     description:
       "A Master Sign Program (MSP) is used to create standard sign design guidelines for projects with multiple buildings or tenants.",
   });

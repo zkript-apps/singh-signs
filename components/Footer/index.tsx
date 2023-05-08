@@ -62,12 +62,21 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row gap-6 lg:gap-0 items-start mb-20">
           {/* start */}
           <div className="w-full lg:w-3/12 lg:mr-12">
-            <Image
-              src="/fremont_logo_white.png"
-              width="320"
-              height="210"
-              alt="Main Logo"
-            />
+            <div className="flex mb-3">
+              <Image
+                src="/img/logo.png"
+                width="53"
+                height="79"
+                alt="Main Logo"
+              />
+              <Image
+                className="my-4"
+                src="/img/textLogo.png"
+                width="207"
+                height="50"
+                alt="Main Logo"
+              />
+            </div>
             <p className="text-shady-white font-medium  mb-8">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis, pulvinar.

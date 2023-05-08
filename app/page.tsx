@@ -9,6 +9,16 @@ import TrustedByClient from "@/components/pages/front/TrustedByClient";
 import OurTeam from "@/components/pages/front/OurTeam";
 import MakeAppointment from "@/components/pages/front/MakeAppointment";
 import Blog from "@/components/pages/front/Blog";
+import { metaBuilder } from "@/helpers/metaBuilder";
+
+export async function generateMetadata() {
+  return metaBuilder({
+    title: "Singh Sign",
+    description:
+      "Our staff will work with your designer or our in house designers will help you make a lasting impression.",
+  });
+}
+
 export default function Home() {
   return (
     <>

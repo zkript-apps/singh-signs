@@ -4,7 +4,7 @@ import { metaBuilder } from "@/helpers/metaBuilder";
 
 export async function generateMetadata() {
   return metaBuilder({
-    title: "Banners and Digital Print - Fremont Sign Company",
+    title: "Banners and Digital Print - Singh Signs",
     description:
       "Advancements in digital print technology and the introduction of top coated fabric have allowed printers to expand their product offerings to include fabric banners.",
   });

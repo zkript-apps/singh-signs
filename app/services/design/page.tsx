@@ -4,7 +4,7 @@ import { metaBuilder } from "@/helpers/metaBuilder";
 
 export async function generateMetadata() {
   return metaBuilder({
-    title: "Services > Design - Fremont Sign Company",
+    title: "Services > Design - Singh Signs",
     description:
       "All public sector buildings will typically have signage inside and outside of their establishments.",
   });

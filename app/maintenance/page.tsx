@@ -4,7 +4,7 @@ import { metaBuilder } from "@/helpers/metaBuilder";
 
 export async function generateMetadata() {
   return metaBuilder({
-    title: "Maintenance - Fremont Sign Company",
+    title: "Maintenance - Singh Signs",
     description:
       "The exterior signs serve an incredibly important role in your business. With an eye-popping signage, you are sure that you are making your",
   });

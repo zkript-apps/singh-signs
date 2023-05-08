@@ -4,7 +4,7 @@ import { metaBuilder } from "@/helpers/metaBuilder";
 
 export async function generateMetadata() {
   return metaBuilder({
-    title: "Signage - Fremont Sign Company",
+    title: "Signage - Singh Signs",
     description:
       "People will form an impression of your business based on a host of factors. One of those is the image you present with your signage.",
   });

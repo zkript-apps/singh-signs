@@ -12,7 +12,7 @@ const montserrat = Montserrat({
 
 export async function generateMetadata() {
   return metaBuilder({
-    title: "Fremont Sign Company",
+    title: "Singh Signs",
     description:
       "Serving Nation Wide Markets with Sign Design, Manufacturing and Project Management Excellence for over 15 years in Bay Area.",
   });

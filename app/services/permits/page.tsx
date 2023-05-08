@@ -4,7 +4,7 @@ import { metaBuilder } from "@/helpers/metaBuilder";
 
 export async function generateMetadata() {
   return metaBuilder({
-    title: "Services > Permits - Fremont Sign Company",
+    title: "Services > Permits - Singh Signs",
     description:
       "In order to open a business, there is a long list of business licenses and permits that a new establishment must obtain.",
   });

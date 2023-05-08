@@ -4,7 +4,7 @@ import { metaBuilder } from "@/helpers/metaBuilder";
 
 export async function generateMetadata() {
   return metaBuilder({
-    title: "Services - Fremont Sign Company",
+    title: "Services - Singh Signs",
     description:
       "We provide Signboard services related to Sign Designing, Building Signs, Outdoor and Indoor Sign...",
   });

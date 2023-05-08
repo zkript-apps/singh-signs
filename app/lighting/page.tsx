@@ -4,7 +4,7 @@ import { metaBuilder } from "@/helpers/metaBuilder";
 
 export async function generateMetadata() {
   return metaBuilder({
-    title: "Lighting - Fremont Sign Company",
+    title: "Lighting - Singh Signs",
     description:
       "For our clients, lighting is no afterthought. It’s a make or break factor in the success of their business and their brand and that",
   });

@@ -14,7 +14,6 @@ import {
   faSignsPost,
   faScrewdriverWrench,
 } from "@fortawesome/free-solid-svg-icons";
-import Images from "@/components/Images";
 
 const Hero = () => {
   return (
