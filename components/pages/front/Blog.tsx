@@ -60,7 +60,7 @@ function Blog() {
               >
                 <button className="font-semibold text-shady-white transition duration-500 hover:text-oxford-blue mt-5">
                   Read More{" "}
-                  <FontAwesomeIcon className="w-5" icon={faArrowRight} />
+                  <FontAwesomeIcon className="w-5 h-4" icon={faArrowRight} />
                 </button>
               </Link>
             </div>

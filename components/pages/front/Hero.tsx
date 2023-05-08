@@ -6,8 +6,6 @@ import "swiper/css";
 import "swiper/swiper-bundle.css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination, Autoplay } from "swiper";
-import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLightbulb } from "@fortawesome/free-regular-svg-icons";
 import {
@@ -40,8 +38,8 @@ const Hero = () => {
           <div className="">
             <Link href="/services">
               <button className="shadow-lg bg-oxford-blue px-6 py-3 hover:bg-giants-orange/20 rounded transition ease-in-out hover:scale-90 text-pure-white">
-                <FontAwesomeIcon icon={faChevronRight} />
-                <FontAwesomeIcon icon={faChevronRight} />
+                <FontAwesomeIcon icon={faChevronRight} className="h-5 w-5" />
+                <FontAwesomeIcon icon={faChevronRight} className="h-5 w-5" />
                 <span className="ml-2">Learn More</span>
               </button>
             </Link>
@@ -84,7 +82,8 @@ const Hero = () => {
           </p>
           <Link href="/">
             <button className="font-semibold text-shady-white transition hover:scale-90 group-hover:text-giants-orange mt-5">
-              Read More <FontAwesomeIcon className="w-5" icon={faArrowRight} />
+              Read More{" "}
+              <FontAwesomeIcon className="w-5 h-4" icon={faArrowRight} />
             </button>
           </Link>
         </div>

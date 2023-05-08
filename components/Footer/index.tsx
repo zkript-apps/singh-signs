@@ -173,7 +173,8 @@ const Footer = () => {
             </Link>
             <p className="text-light-gray text-right pl-2 font-medium">
               Copyright {new Date().getFullYear()}
-              <FontAwesomeIcon icon={faCopyright} /> All Right Reserved
+              <FontAwesomeIcon icon={faCopyright} className="w-4 h-4" /> All
+              Right Reserved
             </p>
           </div>
         </div>

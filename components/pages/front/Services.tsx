@@ -49,7 +49,10 @@ const Services = () => {
                     <Link href={`${subMenu.url}`}>
                       <button className="font-semibold text-shady-white hover:scale-90 transition hover:text-giants-orange mt-3">
                         Read More{" "}
-                        <FontAwesomeIcon className="w-5" icon={faArrowRight} />
+                        <FontAwesomeIcon
+                          className="w-5 h-4"
+                          icon={faArrowRight}
+                        />
                       </button>
                     </Link>
                   </li>
