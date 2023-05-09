@@ -13,7 +13,7 @@ import { metaBuilder } from "@/helpers/metaBuilder";
 
 export async function generateMetadata() {
   return metaBuilder({
-    title: "Singh Sign",
+    title: "Singh Signs",
     description:
       "Our staff will work with your designer or our in house designers will help you make a lasting impression.",
   });
@@ -29,7 +29,7 @@ export default function Home() {
       <WhyChooseUs />
       <Clients />
       <TrustedByClient />
-      <OurTeam />
+      {/* <OurTeam /> */}
       <MakeAppointment />
       <Blog />
       {/* <FeaturedWorks />

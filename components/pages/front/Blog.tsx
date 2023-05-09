@@ -46,7 +46,7 @@ function Blog() {
               className="bg-giants-orange shadow-2xl p-5 rounded-lg relative mb-5 sm:mr-5 lg:mb-0 text-shady-white space-y-7 text-start"
             >
               <Image
-                className="object-cover mb-3"
+                className="object-cover mb-3 transition hover:rotate-3 duration-300 hover:scale-105 hover:hue-rotate-15"
                 src={`${item.image}`}
                 width="600"
                 height="500"

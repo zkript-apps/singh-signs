@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={montserrat.className}>
-      <link rel="icon" type="image/x-icon" href={`/fav.png`} />
+      <link rel="icon" type="image/x-icon" href={`/img/favicon.png`} />
       <body>
         <MainNavigation />
         <div className="pt-[95px] md:pt-[135px]">{children}</div>
