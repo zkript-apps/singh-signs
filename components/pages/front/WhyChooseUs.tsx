@@ -25,7 +25,7 @@ function WhyChooseUs() {
             to enhance their branding and improve their customer experience.
             With a team of highly skilled experts and a focus on innovative
             techniques, we are dedicated to delivering outstanding results that
-            exceed our clients' expectations. We pride ourselves on our
+            exceed our clients&apos; expectations. We pride ourselves on our
             attention to detail, quality craftsmanship, and ability to deliver
             projects on time and within budget.
           </p>
