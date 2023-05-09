@@ -8,7 +8,7 @@ import Clients from "@/components/pages/front/Clients";
 import TrustedByClient from "@/components/pages/front/TrustedByClient";
 import OurTeam from "@/components/pages/front/OurTeam";
 import MakeAppointment from "@/components/pages/front/MakeAppointment";
-import Blog from "@/components/pages/front/Blog";
+import RecentProjects from "@/components/pages/front/RecentProjects";
 import { metaBuilder } from "@/helpers/metaBuilder";
 
 export async function generateMetadata() {
@@ -29,11 +29,8 @@ export default function Home() {
       <WhyChooseUs />
       <Clients />
       <TrustedByClient />
-      {/* <OurTeam /> */}
       <MakeAppointment />
-      <Blog />
-      {/* <FeaturedWorks />
-      <Clients /> */}
+      <RecentProjects />
     </>
   );
 }

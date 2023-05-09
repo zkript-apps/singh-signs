@@ -10,15 +10,16 @@ function MakeAppointment() {
         <div className="bg-giants-orange/70 p-14 text-shady-white rounded-t-xl rounded-b-xl md:rounded-b-none md:rounded-t-xl space-y-5 mb-20 md:mb-0">
           <p className="font-bold tracking-[0.2em]">MAKING YOUR LIFE SAFER</p>
           <h2 className="text-3xl lg:text-5xl font-bold">
-            Delivering the Best Security Solutions to Our Clients
+            Delivering the Best Signage Solutions to Our Clients
           </h2>
           <p className="font-medium">
-            Suspendisse efficitur, ipsum sit amet posuere auctor, orci erat
-            tempus ligula, id accumsan felis urna quis felis.
+            Providing tailored solutions that effectively address unique needs
+            and challenges. We believe in fostering long-term partnerships built
+            on trust, transparency, and a commitment to excellence.
           </p>
-          <Link href="/">
+          <Link href="/contact">
             <button className="shadow-lg mt-8 bg-oxford-blue text-light-gray px-6 py-3 hover:bg-oxford-blue/80 rounded transition ease-in-out hover:scale-90">
-              More About Us
+              Book Now
             </button>
           </Link>
         </div>

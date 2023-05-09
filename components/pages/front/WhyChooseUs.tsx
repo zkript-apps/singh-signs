@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 function WhyChooseUs() {
   return (
@@ -15,17 +16,18 @@ function WhyChooseUs() {
       <div className="flex items-center justify-center flex-wrap">
         <div className="sm:basis-3/6 lg:basis-1/3 sm:pr-20">
           <p className="text-xl font-semibold text-darker-gray italic mb-10">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis.
+            Serving Nation Wide Markets with Sign Design, Manufacturing and
+            Project Management Excellence for over 15 years in Bay Area.
           </p>
           <p className="font-medium leading-relaxed text-darker-gray mb-10">
-            Aenean sed viverra magna. In et luctus nisi. Suspendisse efficitur,
-            ipsum sit amet posuere auctor, orci erat tempus ligula, id accumsan
-            felis urna quis felis. In ultricies libero quis orci aliquet, sit
-            amet dignissim turpis venenatis. Duis efficitur, ligula id rhoncus
-            aliquet, dui lacus lacinia metus, nec vulputate augue sem at dolor.
-            Nulla nulla diam, sollicitudin eu volutpat eu, hendrerit eleifend
-            mauris. Morbi ornare tristique accumsan. Maecenas eu mauris magna.
+            Our commitment to providing personalized solutions and exceptional
+            customer service has made us the go-to choice for businesses looking
+            to enhance their branding and improve their customer experience.
+            With a team of highly skilled experts and a focus on innovative
+            techniques, we are dedicated to delivering outstanding results that
+            exceed our clients' expectations. We pride ourselves on our
+            attention to detail, quality craftsmanship, and ability to deliver
+            projects on time and within budget.
           </p>
         </div>
         <div className="sm:basis-3/6 lg:basis-1/3 w-96 relative mb-20 lg:mb-0">
@@ -38,14 +40,16 @@ function WhyChooseUs() {
               alt="mountainworks"
             />
           </div>
-          <button className="absolute -bottom-10 z-20 -left-10 bg-giants-orange w-64 h-20 rounded-xl flex items-center justify-center transition duration-300 text-shady-white hover:text-oxford-blue">
-            <FontAwesomeIcon
-              icon={faChevronRight}
-              className="w-3 h-3 -mr-1.5"
-            />
-            <FontAwesomeIcon icon={faChevronRight} className="w-3 h-3" />
-            <span className="ml-2">Book Now</span>
-          </button>
+          <Link href="/contact">
+            <button className="absolute -bottom-10 z-20 -left-10 bg-giants-orange w-64 h-20 rounded-xl flex items-center justify-center transition duration-300 text-shady-white hover:text-oxford-blue">
+              <FontAwesomeIcon
+                icon={faChevronRight}
+                className="w-3 h-3 -mr-1.5"
+              />
+              <FontAwesomeIcon icon={faChevronRight} className="w-3 h-3" />
+              <span className="ml-2">Book Now</span>
+            </button>
+          </Link>
           <div className="absolute -bottom-10 z-0 -left-10 bg-giants-orange w-64 h-96 rounded-xl"></div>
         </div>
         <div className="w-full lg:basis-1/3 pl-10 lg:pl-20">
@@ -53,22 +57,22 @@ function WhyChooseUs() {
             <li>
               <h4 className="text-xl mb-4">Led Lighting</h4>
               <p className="text-darker-gray font-medium">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                maximus purus quam.
+                Energy-efficient lighting solutions that provide bright,
+                long-lasting illumination for any space.
               </p>
             </li>
             <li>
               <h4 className="text-xl mb-4">Retrofits</h4>
               <p className="text-darker-gray font-medium">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                maximus purus quam.
+                Upgrades to existing lighting systems to improve energy
+                efficiency and performance.
               </p>
             </li>
             <li>
               <h4 className="text-xl mb-4">Installation</h4>
               <p className="text-darker-gray font-medium">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                maximus purus quam.
+                Expert installation of a wide range of lighting systems,
+                including LED and traditional options.
               </p>
             </li>
           </ul>

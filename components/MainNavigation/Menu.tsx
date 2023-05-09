@@ -49,8 +49,8 @@ const Menu = ({
     >
       <Link
         href={url}
-        className={`font-semibold text-sm group-hover:text-giants-orange flex items-center ${
-          pathname === url ? "text-giants-orange" : "text-pure-white"
+        className={`font-semibold text-sm hover:text-giants-orange flex items-center ${
+          pathname === url ? "text-giants-orange" : "text-rich-blacks"
         }`}
         onClick={() => toggleHoverMenu()}
       >

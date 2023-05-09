@@ -14,6 +14,14 @@ import {
 import { NAVIGATION_MENU } from "@/helpers/constants";
 
 const Services = () => {
+  const description = [
+    "Here’s what we know: People will form an impression of your business based on a...",
+    "When you think of signage engineering you might think of the structure of your...",
+    "All public sector buildings will typically have signage inside and outside of their...",
+    "In order to open a business, there is a long list of business licenses and  permits that...",
+    "A Master Sign Program (MSP) is used to create standard sign design guidelines...",
+  ];
+
   return (
     <div className="xl:flex flex-row justify-center">
       <div className="py-20 p-8 2xl:pl-80 xl:pr-24 xl:py-20 text-shady-white bg-oxford-blue">
@@ -44,7 +52,7 @@ const Services = () => {
                     />
                     <h3 className="text-2xl">{str}</h3>
                     <p className="text-light-gray font-medium leading-relaxed">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      {description[index]}
                     </p>
                     <Link href={`${subMenu.url}`}>
                       <button className="font-semibold text-shady-white hover:scale-90 transition hover:text-giants-orange mt-3">

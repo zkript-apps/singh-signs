@@ -27,11 +27,10 @@ function TrustedByClient() {
           We Are Ready to Serve Your Solution
         </h2>
         <p className="font-medium leading-relaxed">
-          Aenean sed viverra magna. In et luctus nisi. Suspendisse efficitur,
-          ipsum sit amet posuere auctor, orci erat tempus ligula, id accumsan
-          felis urna quis felis. In ultricies libero quis orci aliquet, sit amet
-          dignissim turpis venenatis. Duis efficitur, ligula id rhoncus aliquet,
-          dui lacus lacinia metus.
+          At our company, we are committed to providing top-quality solutions
+          that meet the unique needs of our clients. Whether you need signage,
+          lighting, or maintenance services, our team of experts is ready to
+          help you achieve your goals.
         </p>
         <div className="flex justify-between">
           <div>
@@ -84,7 +83,8 @@ function TrustedByClient() {
         <h3 className="text-2xl lg:text-4xl">254 Projects</h3>
         <h4 className="text-xl">Happy Client</h4>
         <p className="font-medium">
-          Lorem ipsum dolor sit amet <br /> consectetur adipiscing.
+          Extensive portfolio of completed <br /> projects showcases our
+          expertise
         </p>
       </div>
     </div>

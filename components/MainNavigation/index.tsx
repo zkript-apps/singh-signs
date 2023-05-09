@@ -33,7 +33,7 @@ const MainNavigation = () => {
   };
   return (
     <div className="fixed w-full z-50">
-      <div className="bg-rich-black px-6 py-2 hidden md:block">
+      <div className="bg-oxford-blue px-6 py-2 hidden md:block">
         <div className="max-w-[1700px] mx-auto flex">
           <div className="flex-1">
             <h4 className="text-shady-white text-base">Fremont, CA 94538</h4>
@@ -45,22 +45,15 @@ const MainNavigation = () => {
           </div>
         </div>
       </div>
-      <div className="bg-oxford-blue flex items-center justify-center px-6 h-24 shadow-md">
+      <div className="bg-shady-white flex items-center justify-center px-6 h-24 shadow-md">
         <div className=" flex items-center max-w-[1700px] w-full mx-auto">
           <div className="flex-1">
             <Link href="/" className="flex">
               <Image
                 className="my-1"
-                src="/img/logo.png"
-                width="53"
-                height="79"
-                alt="Main Logo"
-              />
-              <Image
-                className="my-4"
-                src="/img/textLogo.png"
-                width="207"
-                height="50"
+                src="/img/singhsignsLogo.png"
+                width="290"
+                height="87"
                 alt="Main Logo"
               />
             </Link>

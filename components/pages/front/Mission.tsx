@@ -25,17 +25,17 @@ function Mission() {
       </div>
       <div className="basis-1/2">
         <p className="font-bold tracking-[0.2em] text-giants-orange mb-5">
-          ABOUT US
+          EXPERTISE
         </p>
         <h2 className="text-3xl lg:text-5xl font-bold text-oxford-blue mb-5 lg:mb-10">
           We Are Expert In Different Solutions
         </h2>
-        <p className="font-medium text-darker-gray mb-5 lg:mb-10">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id
-          risus tortor. Ut pellentesque, erat eu gravida interdum, risus massa
-          interdum odio, non tristique dui metus et risus. Maecenas augue lacus,
-          vehicula sed blandit vel, facilisis vel neque. Proin neque ligula,
-          eleifend vitae accumsan ac, sollicitudin ac neque.
+        <p className="font-medium text-darker-gray leading-loose mb-5  lg:mb-10">
+          Our strength and value comes from many decades of experience, combined
+          with a commitment to continually improve our manufacturing processes.
+          Extensive, up-front planning is the key ingredient to managing large
+          signage conversion projects. The customer’s wants, needs and
+          expectations are always kept as our top priority.
         </p>
         <Link href="/">
           <button className="shadow-lg bg-oxford-blue text-light-gray px-6 py-3 hover:bg-oxford-blue/80 rounded transition ease-in-out hover:scale-90">

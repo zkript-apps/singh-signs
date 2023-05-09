@@ -55,11 +55,11 @@ const Hero = () => {
             Signage
           </h3>
           <p className="text-darker-gray font-medium leading-loose transition group-hover:text-shady-white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-            feugiat dolor at commodo efficitur. Nullam eu nulla non lectus
-            ullamcorper feugiat.
+            Here’s what we know: People will form an impression of your business
+            based on a host of factors. One of those is the image you present
+            with your signage.
           </p>
-          <Link href="/">
+          <Link href="/signage">
             <button className="font-semibold text-giants-orange hover:scale-90 transition group-hover:text-shady-white mt-5">
               Read More <FontAwesomeIcon className="w-5" icon={faArrowRight} />
             </button>
@@ -75,11 +75,11 @@ const Hero = () => {
             Lighting
           </h3>
           <p className="text-shady-white font-medium leading-loose transition group-hover:text-darker-gray">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-            feugiat dolor at commodo efficitur. Nullam eu nulla non lectus
-            ullamcorper feugiat.
+            For our customers, lighting is no afterthought. It’s a make or break
+            factor in the success of their business and their brand and that
+            recognition is what brought them to Triangle.
           </p>
-          <Link href="/">
+          <Link href="/lighting">
             <button className="font-semibold text-shady-white transition hover:scale-90 group-hover:text-giants-orange mt-5">
               Read More{" "}
               <FontAwesomeIcon className="w-5 h-4" icon={faArrowRight} />
@@ -93,14 +93,14 @@ const Hero = () => {
             className="h-16 w-16 text-giants-orange"
           />
           <h3 className="text-2xl font-bold text-shady-white transition group-hover:text-oxford-blue">
-            Lighting
+            Maintenance
           </h3>
           <p className="text-shady-white font-medium leading-loose transition group-hover:text-darker-gray">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-            feugiat dolor at commodo efficitur. Nullam eu nulla non lectus
-            ullamcorper feugiat.
+            Customer engagement and branding don’t take any days off. That’s why
+            Triangle provides emergency, planned and preventive maintenance
+            services for signs and lighting systems nationwide.
           </p>
-          <Link href="/">
+          <Link href="/maintenance">
             <button className="font-semibold text-shady-white transition hover:scale-90 group-hover:text-giants-orange mt-5">
               Read More <FontAwesomeIcon className="w-5" icon={faArrowRight} />
             </button>
