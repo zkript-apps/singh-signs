@@ -45,15 +45,15 @@ const MainNavigation = () => {
           </div>
         </div>
       </div>
-      <div className="bg-shady-white flex items-center justify-center px-6 h-24 shadow-md">
+      <div className="bg-shady-white flex items-center justify-center px-6 py-2 shadow-md">
         <div className=" flex items-center max-w-[1700px] w-full mx-auto">
           <div className="flex-1">
             <Link href="/" className="flex">
               <Image
                 className="my-1"
                 src="/img/singhsignsLogo.png"
-                width="290"
-                height="87"
+                width="255"
+                height="78"
                 alt="Main Logo"
               />
             </Link>

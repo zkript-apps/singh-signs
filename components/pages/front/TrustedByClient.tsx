@@ -80,7 +80,7 @@ function TrustedByClient() {
       </Swiper>
       <div className="absolute bottom-0 z-30 right-0 bg-giants-orange p-8 lg:p-12 rounded-l-xl rounded-tr-xl text-shady-white space-y-3">
         <FontAwesomeIcon icon={faHandshake} className="w-14 h-14" />
-        <h3 className="text-2xl lg:text-4xl">254 Projects</h3>
+        <h3 className="text-2xl lg:text-4xl">6k+ Projects</h3>
         <h4 className="text-xl">Happy Client</h4>
         <p className="font-medium">
           Extensive portfolio of completed <br /> projects showcases our

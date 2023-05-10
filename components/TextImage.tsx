@@ -31,7 +31,7 @@ const TextImage = ({
         />
         <div className="absolute -bottom-16 left-12 bg-giants-orange p-8 lg:p-12 rounded-xl text-shady-white space-y-3">
           <FontAwesomeIcon icon={faEnvelopeOpenText} className="w-14 h-14" />
-          <h3 className="text-2xl lg:text-4xl">254 M</h3>
+          <h3 className="text-2xl lg:text-4xl">6k+</h3>
           <h4 className="text-xl">Happy Client</h4>
         </div>
       </div>
