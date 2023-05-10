@@ -40,7 +40,7 @@ const MainNavigation = () => {
           </div>
           <div>
             <h4 className="text-shady-white text-base">
-              510-573-3162 | fremontsigncompany@gmail.com
+              510-573-3162 | singhsignsca@gmail.com
             </h4>
           </div>
         </div>

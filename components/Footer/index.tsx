@@ -159,7 +159,7 @@ const Footer = () => {
                 </h3>
               </li>
               <li>
-                <p className="text-base">fremontsigncompany@gmail.com</p>
+                <p className="text-base">singhsignsca@gmail.com</p>
               </li>
             </ul>
           </div>

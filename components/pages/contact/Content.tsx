@@ -157,7 +157,7 @@ const Content = () => {
             <span>510-573-3162</span>
           </p>
           <Link
-            href="mailto:fremontsigncompany@gmail.com"
+            href="mailto:singhsignsca@gmail.com"
             className="text-giants-orange hover:text-gray-500"
           >
             <p className="flex items-center mt-5">
@@ -165,7 +165,7 @@ const Content = () => {
                 icon={faEnvelope}
                 className="w-7 h-7 mr-4 text-giants-orange"
               />
-              <span>fremontsigncompany@gmail.com</span>
+              <span>singhsignsca@gmail.com</span>
             </p>
           </Link>
         </div>
