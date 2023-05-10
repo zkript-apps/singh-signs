@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function WhyChooseUs() {
   return (
-    <div className="py-24 px-8 xl:px-80">
+    <div className="pb-20 px-8 xl:px-80">
       <p className="font-bold tracking-[0.2em] text-giants-orange mb-5">
         WHY CHOOSE US
       </p>

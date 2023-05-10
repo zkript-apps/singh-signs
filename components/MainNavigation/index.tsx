@@ -33,7 +33,7 @@ const MainNavigation = () => {
   };
   return (
     <div className="fixed w-full z-50">
-      <div className="bg-oxford-blue px-6 py-2 hidden md:block">
+      <div className="bg-rich-black e px-6 py-2 hidden md:block">
         <div className="max-w-[1700px] mx-auto flex">
           <div className="flex-1">
             <h4 className="text-shady-white text-base">Fremont, CA 94538</h4>

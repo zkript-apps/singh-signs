@@ -14,7 +14,7 @@ import { faCopyright, faCreditCard } from "@fortawesome/free-regular-svg-icons";
 const Footer = () => {
   return (
     <>
-      <div className="bg-[url('/topFooterImage.png')] lg:mt-28 bg-cover bg-no-repeat bg-opacity-50 bg-oxford-blue ">
+      <div className="bg-[url('/topFooterImage.png')] lg:mt-40 bg-cover bg-no-repeat bg-opacity-50 bg-oxford-blue">
         <div className="flex flex-col-reverse lg:flex-row max-w-7xl	m-auto px-6">
           <div className="relative w-full m-auto lg:m-0 max-w-md lg:ml-20">
             <Image
@@ -78,8 +78,8 @@ const Footer = () => {
               />
             </div>
             <p className="text-shady-white font-medium  mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar.
+              Our staff will work with your designer or our in house designers
+              will help you make a lasting impression
             </p>
             <div className="flex-1 mt-4">
               <Link href="https://www.facebook.com/fremontsigncompany/">
