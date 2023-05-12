@@ -51,7 +51,7 @@ const MainNavigation = () => {
             <Link href="/" className="flex">
               <Image
                 className="my-1"
-                src="/img/singhsignsLogo.png"
+                src="/img/singhsignsLogoHeader.png"
                 width="255"
                 height="78"
                 alt="Main Logo"
