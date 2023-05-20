@@ -6,7 +6,7 @@ export async function generateMetadata() {
   return metaBuilder({
     title: "Portfolio - Singh Signs",
     description:
-      "We offer the complete solution from sign design through to installation. Fremont Sign Company has earned the regard of its long-standing",
+      "We offer the complete solution from sign design through to installation. Singh Signs Company has earned the regard of its long-standing",
   });
 }
 

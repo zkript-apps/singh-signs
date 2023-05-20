@@ -12,5 +12,5 @@ export const transporter = nodemailer.createTransport({
 });
 
 export const mailOptions = {
-  from: `Fremont Sign Company <${email}>`,
+  from: `Singh Signs Company <${email}>`,
 };

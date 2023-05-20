@@ -17,15 +17,17 @@ export function metaBuilder({
     openGraph: {
       title: title,
       description: description,
-      url: `${
-        process.env.NODE_ENV === "production"
-          ? "https://fremontsigncompany.com"
+      url: `${process.env.NODE_ENV === "production"
+          ? "http://www.singhsigns.com"
           : "http://localhost:3000"
-      }`,
-      siteName: "Fremont Sign Company",
+        }`,
+      siteName: "Singh Signs Company",
       images: [
         {
-          url: imgUrl ? imgUrl : "/img/singhsignsMetadata.png",
+          url: imgUrl ? imgUrl : `${process.env.NODE_ENV === "production"
+              ? "http://www.singhsigns.com"
+              : "http://localhost:3000"
+            }/img/singhsignsMetadata.png`,
           width: imgWidth ? imgWidth : "1920",
           height: imgHeight ? imgHeight : "1080",
         },

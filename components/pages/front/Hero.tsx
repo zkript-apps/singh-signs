@@ -21,7 +21,7 @@ const Hero = () => {
       <div className="bg-[url('/img/front-bg-photo.png')] bg-cover bg-no-repeat h-screen px-6 xl:px-80 flex flex-col">
         <div className="flex-1 flex flex-col justify-center  mb-[125px] space-y-10">
           <h3 className="text-light-gray font-medium text-2xl">
-            Welcome to Fremont Sign Company!
+            Welcome to Singh Signs Company!
           </h3>
           <h1 className="text-shady-white font-bold text-5xl md:text-7xl ">
             Nationwide Signage And

@@ -6,7 +6,7 @@ export async function generateMetadata() {
   return metaBuilder({
     title: "Installation - Singh Signs",
     description:
-      "At Fremont Sign Company, quality is the goal of the installation process. The signs are being installed with all product specific requirements in mind.",
+      "At Singh Signs Company, quality is the goal of the installation process. The signs are being installed with all product specific requirements in mind.",
   });
 }
 

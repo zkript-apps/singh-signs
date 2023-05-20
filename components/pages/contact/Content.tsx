@@ -145,7 +145,7 @@ const Content = () => {
               className="w-7 h-7 mr-4 text-giants-orange"
             />
             <span>
-              Fremont Sign Company 44279 <br /> Fremont Blvd. Unit P Fremont
+              Singh Signs Company 44279 <br /> Fremont Blvd. Unit P Fremont
               <br /> CA 94538
             </span>
           </p>
