@@ -18,14 +18,14 @@ export function metaBuilder({
       title: title,
       description: description,
       url: `${process.env.NODE_ENV === "production"
-          ? "http://www.singhsigns.com"
+          ? "https://singh-signs.vercel.app" // <-- change this to prod deployment url
           : "http://localhost:3000"
         }`,
       siteName: "Singh Signs Company",
       images: [
         {
           url: imgUrl ? imgUrl : `${process.env.NODE_ENV === "production"
-              ? "http://www.singhsigns.com"
+              ? "https://singh-signs.vercel.app" // <-- change this to prod deployment url
               : "http://localhost:3000"
             }/img/singhsignsMetadata.png`,
           width: imgWidth ? imgWidth : "1920",
